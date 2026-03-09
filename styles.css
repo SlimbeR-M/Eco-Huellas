@@ -23,6 +23,8 @@ body {
     padding: 0 12px;
     box-shadow: 0 0 20px 2px #00000099;
     z-index: 20;
+    position: sticky;
+    top: 0;
 }
 
 .header__logo {
@@ -34,6 +36,10 @@ body {
     font-size: 1.5rem;
     color: #fff;
     text-transform: uppercase;
+}
+
+.header__nav{
+    margin: 0 auto;
 }
 
 .header__list {
@@ -112,4 +118,82 @@ body {
 .hero__link--transparent {
     background-color: transparent;
     color: #fff;
+}
+
+/*ABOUT US SECTION*/ 
+.about {
+    background-color: #f4f4f4;
+    height: calc(100vh - 8vh);
+    padding: 25px;
+}
+
+.about__title {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.about__container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "historia team"
+        "mision team";
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.about__historia, .about__item, .about__team {
+    background-color: #eaeaea;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px #00000099;
+    text-align: center;
+    padding: 20px;
+}
+
+.about__historia {
+    grid-area: historia;
+    
+}
+
+.about__values {
+    grid-area: mision;
+    display: flex;
+    padding: 0;
+    gap: 20px;
+}
+
+.about__team {
+    grid-area: team;
+}
+
+.about__item {
+    margin: 0px;
+}
+
+.about__image {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.about__subtitle {
+    font-size: 2rem;
+}
+
+.about__text {
+    font-size: 1.2rem;
+}
+
+.about__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.about__team-image{
+    width: 100%;
+    border-radius: 10px;
 }
