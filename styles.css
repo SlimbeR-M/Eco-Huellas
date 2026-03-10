@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f4f4f4;
 }
 
 .header {
@@ -69,9 +70,9 @@ body {
 }
 
 
-/* HERO SECTION */
+/*----------HERO SECTION----------*/
 .hero {
-    background-image:url("hero.png");
+    background-image: url("hero.png");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -120,19 +121,19 @@ body {
     color: #fff;
 }
 
-/*ABOUT US SECTION*/ 
+/*----------ABOUT US SECTION----------*/ 
 .about {
-    background-color: #f4f4f4;
     height: calc(100vh - 8vh);
     padding: 25px;
 }
 
-.about__title {
+.about__title, .actions__title {
     margin: 0;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bolder;
     text-transform: uppercase;
+    color: #002104;
 }
 
 .about__container {
@@ -194,6 +195,109 @@ body {
 }
 
 .about__team-image{
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
+}
+
+/*----------ACTIONS SECTION----------*/
+.actions {
+    height: calc(100vh - 8vh);
+    padding: 40px 20px;
+}
+
+.actions__cards {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions__card {
+    background-color: #eaeaea;
+    border-radius: 20px;
+    max-width: 350px;
+    text-align: center;
+    height: 420px;
+    box-shadow: 0 0 10px #00000099;
+}
+
+.actions__card--middle {
+    max-width: 250px;
+}
+
+.actions__subtitle {
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #6ba356;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.actions__subtitle--color {
+    background-color: #b67a27f6;
+}
+.actions__image {
+    max-width: 100%;
+}
+
+.actions__image-container {
+    position: relative;
+}
+
+.actions__image-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent 60%, #00000066);
+}
+
+.actions__top {
+    background-color: #2b5c19;
+    border-radius: 20px;
+}
+
+.actions__image--top {
+    max-width: 20%;
+    filter: invert(1);
+    margin-top: 15px;
+}
+
+.actions__top > .actions__subtitle {
+    border-radius: 0px;
+    background-color: #2b5c19;
+}
+
+.actions__text {
+    padding: 10px;
+}
+
+.actions__count {
+    display: block;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.actions__stats {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.actions__list {
+    list-style: none;
+    text-align: start;
+}
+
+.actions__item {
+    display: flex;
+    margin: 5px 0;
+}
+
+.actions__icon {
+    width: 16px;
+    filter: brightness(0) saturate(100%) invert(30%) sepia(60%) saturate(600%) hue-rotate(350deg) brightness(90%);
+    margin: 0 5px;
 }
